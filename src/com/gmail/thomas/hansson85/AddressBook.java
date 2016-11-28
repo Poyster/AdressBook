@@ -7,9 +7,9 @@ import java.util.logging.Logger;
 
 public class AddressBook implements Serializable {
 
-    Runnable autoSave;
-    Register register = new Register();
-    FileHandler fileHandler = new FileHandler();
+    private Runnable autoSave;
+    private Register register = new Register();
+    private FileHandler fileHandler = new FileHandler();
     private final static Logger logger = Logger.getLogger(AddressBook.class.getName());
 
     public void mainMenu() {

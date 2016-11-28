@@ -3,17 +3,17 @@ package com.gmail.thomas.hansson85;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Register implements Serializable {
 
-    FileHandler fileHandler = new FileHandler();
+    private FileHandler fileHandler = new FileHandler();
+    private Printer printer = new Printer();
     ArrayList<Contact> contacts;
     private final static Logger logger = Logger.getLogger(Register.class.getName());
-    Contact contact;
+    private Contact contact;
 
     public Register() {
         contacts = fileHandler.loadOnStart();
@@ -62,18 +62,9 @@ public class Register implements Serializable {
     }
 
     public void showAllContacts(ArrayList contacts) {
-        ArrayList<Contact> sortedTempList = new ArrayList();
-        sortedTempList.addAll(contacts);
 
-        Collections.sort(sortedTempList);
-        for (Contact contact:sortedTempList) {
-            System.out.println(contact);
-        }
-        logger.log(Level.FINE, "User looked at a list of all contacts");
-        if (contacts.isEmpty()){
-            System.out.println("There are currently no contacts in the address book.");
-            logger.log(Level.FINE, "User looked at an empty contact list");
-        }
+            printer.printAnSortedList(contacts);
+
     }
 
     public void searchForContacts(String searchFor) {
@@ -83,14 +74,15 @@ public class Register implements Serializable {
         ArrayList<Contact> sortedTempList = new ArrayList<>();
         sortedTempList.addAll(contacts);
 
-        for (int i = 0; i < sortedTempList.size(); i++) {
-            if (getContacts().get(i).getFirstName().toLowerCase().startsWith(searchFor) || getContacts().get(i).getSurName().toLowerCase().startsWith(searchFor)) {
-                Collections.sort(sortedTempList);
-                result = getContacts().get(i).toString();
-                System.out.println(getContacts().get(i).toString());
+        for (Contact contact:sortedTempList) {
+
+            if (contact.getFirstName().toLowerCase().startsWith(searchFor) || contact.getSurName().toLowerCase().startsWith(searchFor)) {
+                ArrayList<Contact> sortedSearchList = new ArrayList<>();
+                sortedSearchList.add(contact);
+                result = contact.getFirstName();
+                printer.printAnSearchedList(sortedSearchList);
                 logger.log(Level.FINE, "User searched for contacts with the search phrase: " + searchFor);
             }
-
         }
         if(result == null){
             System.out.println("No contact found.");

@@ -5,9 +5,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class AutoSave implements Runnable{
-    Register register = new Register();
+    private Register register = new Register();
     private final static Logger logger = Logger.getLogger(AutoSave.class.getName());
-    FileHandler fileHandler = new FileHandler();
+    private FileHandler fileHandler = new FileHandler();
 
     public AutoSave(Register register) {
        this.register = register;

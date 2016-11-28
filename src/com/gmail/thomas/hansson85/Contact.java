@@ -21,18 +21,9 @@ public class Contact implements Serializable, Comparable<Contact> {
         return surName;
     }
 
-    public String getUniqueID() {
-        return uniqueID;
-    }
+    public String getUniqueID() { return uniqueID; }
 
-    @Override
-    public String toString() {
-        return
-                "Firstname: " + firstName + '\n' +
-                        "Lastname: " + surName + '\n' +
-                        "E-mail address: " + emailAddress + '\n' +
-                        "ID: " + uniqueID + '\n';
-    }
+    public String getEmailAddress() { return emailAddress; }
 
     @Override
     public int compareTo(Contact contact) {

@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class FileHandler implements Serializable {
-    File file = new File("AddressBookStart");
+    private File file = new File("AddressBookStart");
     private final static Logger logger = Logger.getLogger(FileHandler.class.getName());
 
 
