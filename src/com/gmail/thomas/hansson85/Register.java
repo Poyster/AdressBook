@@ -10,9 +10,18 @@ import java.util.logging.Logger;
 
 public class Register implements Serializable {
 
-    ArrayList<Contact> contacts = new ArrayList<>();
+    FileHandler fileHandler = new FileHandler();
+    ArrayList<Contact> contacts;
     private final static Logger logger = Logger.getLogger(Register.class.getName());
     Contact contact;
+
+    public Register() {
+        contacts = fileHandler.loadOnStart();
+        if(contacts == null){
+            contacts = new ArrayList<>();
+        }
+    }
+
 
     public void addContact(String firstName, String surName, String emailAddress) {
 
@@ -106,6 +115,5 @@ public class Register implements Serializable {
     public void invalidCommand(String command){
         System.out.println(command + " is not a valid command, please try again.");
     }
-
 
 }

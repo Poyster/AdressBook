@@ -2,6 +2,7 @@ package com.gmail.thomas.hansson85;
 
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -10,14 +11,14 @@ public class FileHandler implements Serializable {
     private final static Logger logger = Logger.getLogger(FileHandler.class.getName());
 
 
-    public Register loadOnStart() {
-        Register contacts = new Register();
+    public ArrayList<Contact> loadOnStart() {
+        ArrayList<Contact> contacts = null;
         if (file.exists() && !file.isDirectory()) {
 
             try {
                 FileInputStream fis = new FileInputStream(file);
                 ObjectInputStream ois = new ObjectInputStream(fis);
-                contacts = (Register) ois.readObject();
+                contacts = (ArrayList<Contact>) ois.readObject();
             }catch(FileNotFoundException e){
                 logger.log(Level.SEVERE, "File not found: ", e);
             } catch (ClassNotFoundException e) {
@@ -27,10 +28,10 @@ public class FileHandler implements Serializable {
                 logger.log(Level.SEVERE, "Something wrong occurred: ", e);
             }
             return contacts;
-        } else return contacts;
+        } return contacts;
     }
 
-    public synchronized void saveToFile(Register addressBook) {
+    public synchronized void saveToFile(ArrayList<Contact> addressBook) {
 
         try {
             FileOutputStream fileOut = new FileOutputStream(file);
