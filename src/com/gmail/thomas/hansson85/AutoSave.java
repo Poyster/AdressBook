@@ -21,9 +21,8 @@ public class AutoSave implements Runnable{
     }catch (InterruptedException e){
         logger.log(Level.SEVERE, "InterruptedException", e);
     }
-    synchronized (this) {
         fileHandler.saveToFile(register);
-    }
+
 }
 
     }

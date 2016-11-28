@@ -11,23 +11,23 @@ public class FileHandler implements Serializable {
 
 
     public Register loadOnStart() {
-        Register a = new Register();
+        Register contacts = new Register();
         if (file.exists() && !file.isDirectory()) {
 
             try {
                 FileInputStream fis = new FileInputStream(file);
                 ObjectInputStream ois = new ObjectInputStream(fis);
-                a = (Register) ois.readObject();
+                contacts = (Register) ois.readObject();
             }catch(FileNotFoundException e){
-                logger.log(Level.SEVERE, "File not found", e);
+                logger.log(Level.SEVERE, "File not found: ", e);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
-                logger.log(Level.SEVERE, "Class not found", e);
+                logger.log(Level.SEVERE, "Class not found: ", e);
             } catch (IOException e) {
-                logger.log(Level.SEVERE, "Something wrong occurred", e);
+                logger.log(Level.SEVERE, "Something wrong occurred: ", e);
             }
-            return a;
-        } else return a;
+            return contacts;
+        } else return contacts;
     }
 
     public synchronized void saveToFile(Register addressBook) {
@@ -36,9 +36,10 @@ public class FileHandler implements Serializable {
             FileOutputStream fileOut = new FileOutputStream(file);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(addressBook);
+            out.close();
             logger.log(Level.INFO, "Saving AddressBook");
         } catch (IOException e) {
-            logger.log(Level.SEVERE, "Something wrong occurred", e);
+            logger.log(Level.SEVERE, "Something wrong occurred: ", e);
         }
     }
 }
