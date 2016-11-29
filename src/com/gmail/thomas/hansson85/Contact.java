@@ -27,6 +27,6 @@ public class Contact implements Serializable, Comparable<Contact> {
 
     @Override
     public int compareTo(Contact contact) {
-        return firstName.compareTo(contact.getFirstName());
+        return firstName.compareToIgnoreCase(contact.getFirstName());
     }
 }

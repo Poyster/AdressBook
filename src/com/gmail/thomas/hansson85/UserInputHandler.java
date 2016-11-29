@@ -29,48 +29,53 @@ public class UserInputHandler implements Serializable {
 
             menuInput = sc.nextLine();
             String[] splitInput = menuInput.split(" ");
+            try {
+                switch (splitInput[0]) {
 
-            switch (splitInput[0]) {
 
-                case "add":
-                    try {
+                    case "add":
+
                         register.addContact(splitInput[1], splitInput[2], splitInput[3]);
-                    } catch (ArrayIndexOutOfBoundsException e) {
-                        register.arrayIndex(e);
-                    }
-                    if (splitInput.length > 4) {
-                        register.toMuchInput();
+
+                        if (splitInput.length > 4) {
+                            register.toMuchInput();
+                            break;
+                        }
                         break;
-                    }
-                    break;
-                case "list":
-                    register.showAllContacts(register.contacts);
-                    break;
+                    case "list":
+                        register.showAllContacts(register.contacts);
+                        break;
 
-                case "search":
-                    register.searchForContacts(splitInput[1]);
-                    break;
+                    case "search":
+                        register.searchForContacts(splitInput[1]);
+                        break;
 
-                case "help":
-                    register.showHelpMenu();
-                    break;
-                case "delete":
-                    register.deleteContact(splitInput[1]);
-                    break;
+                    case "help":
+                        register.showHelpMenu();
+                        break;
+                    case "delete":
+                        register.deleteContact(splitInput[1]);
+                        break;
 
-                case "quit":
-                    fileHandler.saveToFile(register.getContacts());
-                    register.quitProgram();
+                    case "quit":
+                        fileHandler.saveToFile(register.getContacts());
+                        register.quitProgram();
 
-                default:
-                    register.invalidCommand(splitInput[0]);
-                    break;
+                    default:
+                        register.invalidCommand(splitInput[0]);
+                        break;
+                }
+
+            } catch (ArrayIndexOutOfBoundsException e) {
+                register.arrayIndex(e);
             }
 
-
         }
+
 
     }
 
 }
+
+
 
