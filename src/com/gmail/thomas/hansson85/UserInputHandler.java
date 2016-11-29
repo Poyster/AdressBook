@@ -5,12 +5,12 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class AddressBook implements Serializable {
+public class UserInputHandler implements Serializable {
 
     private Runnable autoSave;
     private Register register = new Register();
     private FileHandler fileHandler = new FileHandler();
-    private final static Logger logger = Logger.getLogger(AddressBook.class.getName());
+    private final static Logger logger = Logger.getLogger(UserInputHandler.class.getName());
 
     public void mainMenu() {
 

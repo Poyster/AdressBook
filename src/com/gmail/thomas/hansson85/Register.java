@@ -22,7 +22,6 @@ public class Register implements Serializable {
         }
     }
 
-
     public void addContact(String firstName, String surName, String emailAddress) {
 
         String uniqueID = UUID.randomUUID().toString();

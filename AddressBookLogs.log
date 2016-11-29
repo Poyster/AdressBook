@@ -1,23 +1,5 @@
-2016-11-28 22:08:07 INFO   com.gmail.thomas.hansson85.AddressBook mainMenu - User starts the Address Book
-2016-11-28 22:08:10 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-28 22:08:12 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:17 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:18 FIN    com.gmail.thomas.hansson85.Register searchForContacts - User searched for contacts with the search phrase: ha
-2016-11-28 22:08:22 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:27 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:28 FIN    com.gmail.thomas.hansson85.Register searchForContacts - User searched for contacts with no result found
-2016-11-28 22:08:32 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:37 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:42 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:47 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:52 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:08:57 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:02 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:07 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:12 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:17 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:22 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:27 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:32 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:37 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
-2016-11-28 22:09:42 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving AddressBook
+2016-11-29 11:55:28 INFO   com.gmail.thomas.hansson85.UserInputHandler mainMenu - User starts the Address Book
+2016-11-29 11:55:31 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
+2016-11-29 11:55:33 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
+2016-11-29 11:55:35 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
+2016-11-29 11:55:35 INFO   com.gmail.thomas.hansson85.Register quitProgram - User exits Address Book
