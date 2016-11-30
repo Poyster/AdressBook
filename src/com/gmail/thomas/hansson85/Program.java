@@ -6,7 +6,7 @@ public class Program {
 
     private UserInputHandler userInputHandler = new UserInputHandler();
 
-    public void run(){
+    public void run() {
         setupLogging();
         userInputHandler.mainMenu();
     }

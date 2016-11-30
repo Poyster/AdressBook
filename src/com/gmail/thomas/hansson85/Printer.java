@@ -27,7 +27,7 @@ public class Printer {
 
     }
 
-    public void printAnSearchedList(ArrayList<Contact> contacts){
+    public void printAnSearchedList(ArrayList<Contact> contacts) {
         ArrayList<Contact> sortedTempList = new ArrayList();
         sortedTempList.addAll(contacts);
 

@@ -15,10 +15,10 @@ public class FileHandler implements Serializable {
         ArrayList<Contact> contacts = null;
         if (file.exists() && !file.isDirectory()) {
 
-            try (FileInputStream fis = new FileInputStream(file)){
+            try (FileInputStream fis = new FileInputStream(file)) {
                 ObjectInputStream ois = new ObjectInputStream(fis);
                 contacts = (ArrayList<Contact>) ois.readObject();
-            }catch(FileNotFoundException e){
+            } catch (FileNotFoundException e) {
                 logger.log(Level.SEVERE, "File not found: ", e);
             } catch (ClassNotFoundException e) {
                 logger.log(Level.SEVERE, "Class not found: ", e);
@@ -26,15 +26,16 @@ public class FileHandler implements Serializable {
                 logger.log(Level.SEVERE, "Something wrong occurred: ", e);
             }
             return contacts;
-        } return contacts;
+        }
+        return contacts;
     }
 
     public synchronized void saveToFile(ArrayList<Contact> addressBook) {
 
-        try (FileOutputStream fileOut = new FileOutputStream(file)){
+        try (FileOutputStream fileOut = new FileOutputStream(file)) {
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(addressBook);
-            logger.log(Level.INFO, "Saving UserInputHandler");
+            logger.log(Level.INFO, "Saving contacts");
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Something wrong occurred: ", e);
         }
