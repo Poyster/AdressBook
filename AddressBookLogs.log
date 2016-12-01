@@ -1,155 +1,18 @@
-2016-11-30 13:05:41 INFO   com.gmail.thomas.hansson85.UserInputHandler mainMenu - User starts the Address Book
-2016-11-30 13:05:44 FIN    com.gmail.thomas.hansson85.Register showHelpMenu - User looked at the help list with commands
-2016-11-30 13:05:46 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:05:51 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:05:56 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:05:59 FIN    com.gmail.thomas.hansson85.Register addContact - User added a new contact
-2016-11-30 13:06:01 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:06 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:10 FIN    com.gmail.thomas.hansson85.Register addContact - User added a new contact
-2016-11-30 13:06:11 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:16 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:26 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:31 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:36 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:41 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:46 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:51 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:51 FIN    com.gmail.thomas.hansson85.Register addContact - User added a new contact
-2016-11-30 13:06:56 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:06:57 ALLVARLIG com.gmail.thomas.hansson85.Register arrayIndex - Not enough input data by user
-java.lang.ArrayIndexOutOfBoundsException: 2
-	at com.gmail.thomas.hansson85.UserInputHandler.mainMenu(UserInputHandler.java:38)
-	at com.gmail.thomas.hansson85.Program.run(Program.java:11)
-	at com.gmail.thomas.hansson85.Main.main(Main.java:8)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
-
-2016-11-30 13:07:01 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:03 ALLVARLIG com.gmail.thomas.hansson85.Register arrayIndex - Not enough input data by user
-java.lang.ArrayIndexOutOfBoundsException: 3
-	at com.gmail.thomas.hansson85.UserInputHandler.mainMenu(UserInputHandler.java:38)
-	at com.gmail.thomas.hansson85.Program.run(Program.java:11)
-	at com.gmail.thomas.hansson85.Main.main(Main.java:8)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
-
-2016-11-30 13:07:06 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:11 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:16 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:26 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:31 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:36 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:41 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:46 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:51 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:07:56 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:01 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:06 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:09 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:08:11 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:16 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:26 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:30 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:08:31 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:36 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:36 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:08:41 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:46 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:50 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:08:51 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:08:56 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:01 FIN    com.gmail.thomas.hansson85.Register searchForContacts - User searched for contacts with the search phrase: a
-2016-11-30 13:09:01 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:06 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:11 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:16 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:26 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:31 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:31 FIN    com.gmail.thomas.hansson85.Register searchForContacts - User searched for contacts with no result found
-2016-11-30 13:09:36 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:41 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:44 ALLVARLIG com.gmail.thomas.hansson85.Register arrayIndex - Not enough input data by user
-java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.gmail.thomas.hansson85.UserInputHandler.mainMenu(UserInputHandler.java:50)
-	at com.gmail.thomas.hansson85.Program.run(Program.java:11)
-	at com.gmail.thomas.hansson85.Main.main(Main.java:8)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
-
-2016-11-30 13:09:46 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:51 FIN    com.gmail.thomas.hansson85.Register searchForContacts - User searched for contacts with no result found
-2016-11-30 13:09:51 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:09:56 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:00 FIN    com.gmail.thomas.hansson85.Register searchForContacts - User searched for contacts with the search phrase: thomas
-2016-11-30 13:10:01 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:06 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:11 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:10:11 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:16 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:26 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:30 FIN    com.gmail.thomas.hansson85.Register deleteContact - User deleted a contact with ID: c4682c5d-16d1-4eb0-8b67-b40d03b948bd
-2016-11-30 13:10:31 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:36 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:37 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:10:41 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:46 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:51 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:10:53 ALLVARLIG com.gmail.thomas.hansson85.Register arrayIndex - Not enough input data by user
-java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.gmail.thomas.hansson85.UserInputHandler.mainMenu(UserInputHandler.java:57)
-	at com.gmail.thomas.hansson85.Program.run(Program.java:11)
-	at com.gmail.thomas.hansson85.Main.main(Main.java:8)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
-
-2016-11-30 13:10:56 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:01 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:06 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:11 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:16 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:26 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:31 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:36 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:39 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving UserInputHandler
-2016-11-30 13:11:39 INFO   com.gmail.thomas.hansson85.Register quitProgram - User exits Address Book
-2016-11-30 13:19:20 INFO   com.gmail.thomas.hansson85.UserInputHandler mainMenu - User starts the Address Book
-2016-11-30 13:19:22 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:19:25 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:19:30 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:19:33 FIN    com.gmail.thomas.hansson85.Register addContact - User added a new contact
-2016-11-30 13:19:35 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:19:36 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:19:40 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:19:45 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:19:50 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:19:52 FIN    com.gmail.thomas.hansson85.Register deleteContact - User tried to delete contact, but no contact found with input ID
-2016-11-30 13:19:55 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:20:00 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:20:03 FIN    com.gmail.thomas.hansson85.Register deleteContact - User deleted a contact with ID: 01f129a5-7b64-45cb-b77d-b11c982cf11b
-2016-11-30 13:20:05 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:20:07 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
-2016-11-30 13:20:10 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:20:14 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:20:14 INFO   com.gmail.thomas.hansson85.Register quitProgram - User exits Address Book
-2016-11-30 13:21:18 INFO   com.gmail.thomas.hansson85.UserInputHandler mainMenu - User starts the Address Book
-2016-11-30 13:21:22 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
-2016-11-30 13:21:22 INFO   com.gmail.thomas.hansson85.Register quitProgram - User exits Address Book
+2016-11-30 17:30:46 INFO   com.gmail.thomas.hansson85.UserInputHandler mainMenu - User starts the Address Book
+2016-11-30 17:30:51 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:30:55 FIN    com.gmail.thomas.hansson85.Register addContact - User added a new contact
+2016-11-30 17:30:56 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:31:01 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:31:03 FIN    com.gmail.thomas.hansson85.Register addContact - User added a new contact
+2016-11-30 17:31:06 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:31:08 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
+2016-11-30 17:31:11 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:31:15 FIN    com.gmail.thomas.hansson85.Register searchForContacts - User searched for contacts with the search phrase: th
+2016-11-30 17:31:16 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:31:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:31:21 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-11-30 17:31:21 INFO   com.gmail.thomas.hansson85.Register quitProgram - User exits Address Book
+2016-12-01 09:43:51 INFO   com.gmail.thomas.hansson85.UserInputHandler mainMenu - User starts the Address Book
+2016-12-01 09:43:53 FIN    com.gmail.thomas.hansson85.Printer printAnSortedList - User looked at a list of all contacts
+2016-12-01 09:43:55 INFO   com.gmail.thomas.hansson85.FileHandler saveToFile - Saving contacts
+2016-12-01 09:43:55 INFO   com.gmail.thomas.hansson85.Register quitProgram - User exits Address Book

@@ -107,7 +107,7 @@ public class Register implements Serializable {
         System.out.println("Not enough input, please try again.");
     }
 
-    public void toMuchInput() {
+    public void toMuchInputRemovedAndAddedContact() {
         System.out.println("To much input added, removed unnecessary input");
     }
 

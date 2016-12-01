@@ -5,22 +5,21 @@ import java.util.Collections;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * Created by Thomas on 2016-11-28.
- */
+
 public class Printer {
     private final static Logger logger = Logger.getLogger(Printer.class.getName());
 
     public void printAnSortedList(ArrayList<Contact> contacts) {
-        ArrayList<Contact> sortedTempList = new ArrayList();
+        ArrayList<Contact> sortedTempList = new ArrayList<>();
         sortedTempList.addAll(contacts);
 
         Collections.sort(sortedTempList);
 
         System.out.println(contactsToString(sortedTempList));
-
-        logger.log(Level.FINE, "User looked at a list of all contacts");
-        if (contacts.isEmpty()) {
+        if(!contacts.isEmpty()) {
+            logger.log(Level.FINE, "User looked at a list of all contacts");
+        }
+        else if (contacts.isEmpty()) {
             System.out.println("There are currently no contacts in the address book.");
             logger.log(Level.FINE, "User looked at an empty contact list");
         }
@@ -28,7 +27,7 @@ public class Printer {
     }
 
     public void printAnSearchedList(ArrayList<Contact> contacts) {
-        ArrayList<Contact> sortedTempList = new ArrayList();
+        ArrayList<Contact> sortedTempList = new ArrayList<>();
         sortedTempList.addAll(contacts);
 
         Collections.sort(sortedTempList);

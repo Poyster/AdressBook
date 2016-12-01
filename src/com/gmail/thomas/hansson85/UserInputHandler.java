@@ -38,7 +38,7 @@ public class UserInputHandler implements Serializable {
                         register.addContact(splitInput[1], splitInput[2], splitInput[3]);
 
                         if (splitInput.length > 4) {
-                            register.toMuchInput();
+                            register.toMuchInputRemovedAndAddedContact();
                             break;
                         }
                         break;
